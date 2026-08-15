@@ -273,14 +273,16 @@ After the notebooks are implemented, run them in this order:
 
 ## 👥 Project Team
 
-| Student ID | Contributor | GitHub Profile | Assigned Branch |
-|:---:|---|:---:|---|
-| `Add ID` | `Add name` | `@username` | `member-01` |
-| `Add ID` | `Add name` | `@username` | `member-02` |
-| `Add ID` | `Add name` | `@username` | `member-03` |
-| `Add ID` | `Add name` | `@username` | `member-04` |
+| Student ID | Contributor | GitHub Profile | Primary Responsibility | Assigned Branch |
+|:---:|---|:---:|---|:---:|
+| **CIT-23-02-0021** | Nilupul Thisaranga | [@N3Edirisinghe](https://github.com/N3Edirisinghe) | Model Evaluation & Selection | `member-01` |
+| **CIT-23-02-0025** | Siluna Nusal | [@GitGuru29](https://github.com/GitGuru29) | Explainable AI (XAI) & Prototype | `member-02` |
+| **CIT-23-02-0042** | Dulani Madubashini | [@cobweb-sudo](https://github.com/cobweb-sudo) | Exploratory Data Analysis (EDA) | `member-03` |
+| **CIT-23-02-0127** | Kaveesha Dilshan | [@Kaveesha23dil](https://github.com/Kaveesha23dil) | Data Preprocessing & Feature Engineering | `member-04` |
+| **CIT-23-02-0359** | Zumra Hassan | [@Zumrahassan222](https://github.com/Zumrahassan222) | Model Development & Tuning | `member-05` |
 
-The coursework allows a maximum of four students per group.
+> [!WARNING]
+> The supplied team list contains five students, but the coursework specification states a maximum of four students per group. Confirm the approved group size with the lecturer before submission.
 
 ---
 
@@ -294,6 +296,7 @@ Each member must work only on their assigned predefined branch:
 | Member 02 | `member-02` |
 | Member 03 | `member-03` |
 | Member 04 | `member-04` |
+| Member 05 | `member-05` |
 
 ### First-time branch setup
 
