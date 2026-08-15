@@ -25,6 +25,7 @@
 - [Notebook Execution Order](#-notebook-pipeline-execution)
 - [Technology Stack](#-technology-stack)
 - [Project Team](#-project-team)
+- [Team Branch Workflow](#-team-branch-workflow)
 - [Academic Integrity](#-academic-integrity)
 
 ---
@@ -272,14 +273,47 @@ After the notebooks are implemented, run them in this order:
 
 ## 👥 Project Team
 
-| Student ID | Contributor | GitHub Profile | Primary Responsibility |
+| Student ID | Contributor | GitHub Profile | Assigned Branch |
 |:---:|---|:---:|---|
-| `Add ID` | `Add name` | `@username` | Add responsibility |
-| `Add ID` | `Add name` | `@username` | Add responsibility |
-| `Add ID` | `Add name` | `@username` | Add responsibility |
-| `Add ID` | `Add name` | `@username` | Add responsibility |
+| `Add ID` | `Add name` | `@username` | `member-01` |
+| `Add ID` | `Add name` | `@username` | `member-02` |
+| `Add ID` | `Add name` | `@username` | `member-03` |
+| `Add ID` | `Add name` | `@username` | `member-04` |
 
 The coursework allows a maximum of four students per group.
+
+---
+
+## 🌿 Team Branch Workflow
+
+Each member must work only on their assigned predefined branch:
+
+| Member | Branch |
+|:---:|---|
+| Member 01 | `member-01` |
+| Member 02 | `member-02` |
+| Member 03 | `member-03` |
+| Member 04 | `member-04` |
+
+### First-time branch setup
+
+```bash
+git fetch origin
+git switch <assigned-branch>
+git push -u origin <assigned-branch>
+```
+
+### Normal contribution workflow
+
+```bash
+git switch <assigned-branch>
+git pull --rebase origin <assigned-branch>
+git add .
+git commit -m "Describe the completed work"
+git push origin <assigned-branch>
+```
+
+Members must not push coursework changes directly to `main`. Completed work should be reviewed through a pull request from the assigned member branch into `main`. Before opening a pull request, synchronize the member branch with the latest `main` and resolve conflicts locally.
 
 ---
 
