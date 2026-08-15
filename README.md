@@ -1,13 +1,13 @@
-# 🏥 SmartCare AI — Disease Risk Classification System
+# 🏥 SmartCare AI — Disease Risk Prediction System
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626.svg?logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Prototype-Streamlit-FF4B4B.svg?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-F7931E.svg?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![Explainable AI](https://img.shields.io/badge/Explainable_AI-SHAP%20%7C%20LIME-2E8B57.svg)](https://shap.readthedocs.io/)
-[![Project Status](https://img.shields.io/badge/Status-Scaffold_Only-lightgrey.svg)](#-project-status)
+[![Explainability](https://img.shields.io/badge/Explainability-SHAP-brightgreen.svg)](https://shap.readthedocs.io/)
+[![Status](https://img.shields.io/badge/Status-Empty_Scaffold-lightgrey.svg)](#-project-status)
 
 > **CCS3440 Artificial Intelligence Coursework Project**  
-> An industry-structured machine-learning project for **Option C — Disease Risk Classification**, designed to classify SmartCare Hospital patients into `Low`, `Medium`, or `High` disease-risk categories.
+> An empty project scaffold for **Option C — Disease Risk Classification**, prepared for an end-to-end machine-learning pipeline and clinical decision-support prototype.
 
 ---
 
@@ -15,19 +15,15 @@
 
 - [Overview](#-overview)
 - [Project Status](#-project-status)
-- [Objectives](#-objectives)
-- [Core Capabilities](#-planned-core-capabilities)
-- [Project Architecture](#-project-architecture--directory-structure)
+- [Project Structure](#-project-architecture--directory-structure)
 - [Dataset Overview](#-dataset-overview)
-- [Machine Learning Workflow](#-machine-learning-workflow--coursework-tasks)
-- [Model Evaluation Plan](#-model-evaluation-plan)
+- [Machine Learning Workflow](#-machine-learning-workflow--tasks)
+- [Evaluation Plan](#-model-evaluation-plan)
 - [Explainable AI and Ethics](#-explainable-ai--ethics)
-- [Prototype Plan](#-ai-prototype-plan)
+- [Streamlit Prototype](#-interactive-streamlit-prototype)
 - [Getting Started](#-getting-started)
-- [Notebook Execution Order](#-planned-notebook-execution-order)
+- [Notebook Execution Order](#-notebook-pipeline-execution)
 - [Technology Stack](#-technology-stack)
-- [Engineering Standards](#-engineering-standards)
-- [Submission Checklist](#-coursework-submission-checklist)
 - [Project Team](#-project-team)
 - [Academic Integrity](#-academic-integrity)
 
@@ -35,63 +31,35 @@
 
 ## 🌟 Overview
 
-The **SmartCare AI Disease Risk Classification System** is a planned clinical decision-support prototype for early disease-risk identification. It will apply supervised machine learning to the lecturer-provided SmartCare Hospital dataset and predict:
+The planned **SmartCare AI Disease Risk Prediction System** will classify patients into three disease-risk categories:
 
-```text
-disease_risk_level → Low | Medium | High
-```
+- `Low`
+- `Medium`
+- `High`
 
-The project covers the complete AI lifecycle: dataset understanding, preprocessing, exploratory analysis, feature engineering, model development, multiclass evaluation, explainable AI, and prototype development.
+The coursework target variable is `disease_risk_level`. The completed project will cover data preparation, exploratory analysis, feature engineering, model comparison, multiclass evaluation, explainable AI, and an interactive prototype.
 
 > [!IMPORTANT]
-> This is an educational AI project. Its predictions must not be presented as medical diagnoses or replace qualified clinical judgment.
+> This project is for education and decision support. A prediction must not be treated as a medical diagnosis or replace qualified clinical judgment.
 
 ---
 
 ## 🚧 Project Status
 
-This repository currently contains the **empty project structure and documentation only**.
+This repository contains **empty files and folders only**, apart from this README and the existing Git configuration.
 
 | Component | Status |
 |---|:---:|
-| Repository architecture | ✅ Created |
+| Reference repository structure | ✅ Mirrored |
 | README documentation | ✅ Created |
-| Lecturer-provided dataset | ⬜ Not added |
-| Analysis notebooks | ⬜ Not started |
-| Reusable Python modules | ⬜ Not started |
-| Trained models and results | ⬜ Not available |
-| Explainability analysis | ⬜ Not started |
-| AI prototype | ⬜ Not started |
+| Dataset contents | ⬜ Empty placeholders |
+| Notebook contents | ⬜ Empty placeholders |
+| Application code | ⬜ Empty placeholder |
+| Trained models | ⬜ Empty placeholders |
+| Metrics and predictions | ⬜ Empty placeholders |
+| License and dependencies | ⬜ Empty placeholders |
 
-No model scores, findings, or clinical claims are reported because experiments have not yet been performed.
-
----
-
-## 🎯 Objectives
-
-- Define disease-risk classification as a multiclass machine-learning problem.
-- Review at least five peer-reviewed research papers and identify research gaps.
-- Understand the supplied dataset, target, attributes, and data-quality limitations.
-- Build a justified preprocessing and feature-engineering pipeline.
-- Explore distributions, correlations, class balance, outliers, and clinical patterns.
-- Train and compare at least three suitable classification algorithms.
-- Select the best model using appropriate multiclass metrics.
-- Explain predictions using SHAP, LIME, or feature importance.
-- Develop a Streamlit or Flask prediction prototype.
-- Discuss privacy, fairness, transparency, limitations, and human oversight.
-
----
-
-## 🔑 Planned Core Capabilities
-
-- **Data quality assessment** — missing values, duplicates, inconsistent values, and outliers.
-- **Exploratory analysis** — descriptive statistics and all required visualizations.
-- **Feature engineering** — encoding, scaling, selection, and justified derived features.
-- **Multi-model comparison** — development and evaluation of at least three classifiers.
-- **Reproducible pipelines** — consistent preprocessing during training and prediction.
-- **Explainable AI** — global feature effects and individual prediction reasoning.
-- **Responsible AI review** — privacy, bias, fairness, uncertainty, and accountability.
-- **Interactive prototype** — patient inputs, validated processing, prediction, and results.
+No model results, dataset values, implementation code, or research findings have been copied from the reference repository.
 
 ---
 
@@ -100,169 +68,149 @@ No model scores, findings, or clinical claims are reported because experiments h
 ```text
 SmartCare-Ai-Risk-Prediction/
 │
-├── .github/
-│   ├── ISSUE_TEMPLATE/               # Future issue templates
-│   └── workflows/                    # Future CI workflows
 ├── app/
-│   ├── assets/                       # Prototype visual assets
-│   └── pages/                        # Prototype pages or views
-├── artifacts/
-│   ├── explainability/               # Generated SHAP/LIME outputs
-│   ├── metrics/                      # Evaluation results
-│   └── models/                       # Serialized trained pipelines/models
-├── config/                           # Future project configuration
+│   └── app.py
+│
 ├── data/
-│   ├── raw/                          # Original lecturer-provided files
-│   ├── interim/                      # Intermediate transformed data
-│   └── processed/                    # Final model-ready data
-├── docs/
-│   ├── literature/                   # Literature review and research gaps
-│   ├── report/                       # Technical report working files
-│   └── slides/                       # Presentation working files
+│   ├── processed/
+│   │   ├── .gitkeep
+│   │   ├── smartcare_clean_dataset.csv
+│   │   ├── X_test.csv
+│   │   ├── X_train.csv
+│   │   ├── y_test.csv
+│   │   └── y_train.csv
+│   ├── raw/
+│   │   ├── .gitkeep
+│   │   ├── smartcare_ai_dataset_1000.csv
+│   │   └── smartcare_ai_dataset_data_dictionary.csv
+│   └── README.md
+│
+├── models/
+│   ├── predictions/
+│   │   ├── decision_tree_test_predictions.csv
+│   │   ├── logistic_regression_test_predictions.csv
+│   │   ├── random_forest_test_predictions.csv
+│   │   └── xgboost_test_predictions.csv
+│   ├── .gitkeep
+│   ├── decision_tree.pkl
+│   ├── evaluation_results.csv
+│   ├── final_model_selection.json
+│   ├── logistic_regression.pkl
+│   ├── model_comparison.csv
+│   ├── model_metadata.json
+│   ├── per_class_metrics.csv
+│   ├── random_forest.pkl
+│   ├── README.md
+│   ├── scaler.pkl
+│   └── xgboost.pkl
+│
 ├── notebooks/
-│   ├── 01_data_understanding/
-│   ├── 02_preprocessing/
-│   ├── 03_eda/
-│   ├── 04_feature_engineering/
-│   ├── 05_model_development/
-│   ├── 06_model_evaluation/
-│   └── 07_explainability/
+│   ├── 01_preprocessing_feature_engineering.ipynb
+│   ├── 02_exploratory_data_analysis.ipynb
+│   ├── 03_model_development.ipynb
+│   ├── 04_model_evaluation.ipynb
+│   ├── 05_explainable_ai_and_ethics.ipynb
+│   └── 06_dashboard_deployment.ipynb
+│
 ├── reports/
-│   ├── figures/                      # Exported plots
-│   └── tables/                       # Exported statistical/metric tables
-├── src/
-│   └── smartcare_risk/
-│       ├── data/                     # Loading, validation, and cleaning
-│       ├── evaluation/               # Metrics and comparison
-│       ├── explainability/           # XAI logic
-│       ├── features/                 # Feature transformations
-│       └── models/                   # Training and prediction
-├── tests/
-│   ├── integration/
-│   └── unit/
+│   ├── figures/
+│   │   └── .gitkeep
+│   └── evaluation_results.csv
+│
 ├── .gitignore
-└── README.md
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
-Empty directories contain `.gitkeep` placeholders so Git can track the scaffold. Remove a directory's placeholder after adding real content.
+Every path above matches the referenced repository. Files intended to hold datasets, notebooks, models, results, predictions, application code, dependencies, or license text are deliberately empty.
 
 ---
 
 ## 📊 Dataset Overview
 
-The coursework specifies a SmartCare Hospital dataset containing **1,000 hospital records** and an accompanying data dictionary.
+The coursework provides:
 
-### Required files
+- `smartcare_ai_dataset_1000.csv`
+- `smartcare_ai_dataset_data_dictionary.csv`
 
-```text
-data/raw/smartcare_ai_dataset_1000.csv
-data/raw/smartcare_ai_dataset_data_dictionary.csv
-```
+The dataset contains 1,000 hospital records covering patient, clinical, operational, and financial information.
 
-| Category | Attributes described in the coursework |
+| Category | Examples from the coursework |
 |---|---|
 | **Patient information** | Patient ID, age, gender, blood group |
 | **Clinical information** | Diagnosis, blood pressure, blood sugar, cholesterol, BMI |
-| **Hospital operations** | Department, appointment history, previous admissions, length of stay, room type, treatment count, laboratory test count |
-| **Financial information** | Consultation, laboratory, room and medicine charges, total bill amount |
+| **Hospital operations** | Department, appointments, admissions, stay, room, treatments, laboratory tests |
+| **Financial information** | Consultation, laboratory, room, medicine, and total charges |
 | **Target variable** | `disease_risk_level` |
-| **Target classes** | `Low`, `Medium`, `High` |
+| **Classes** | `Low`, `Medium`, `High` |
 
-Exact column names, types, units, valid ranges, and class distributions must be verified against the supplied files.
+The empty raw-data placeholders must be replaced with the lecturer-provided files. No external dataset is required.
 
 > [!CAUTION]
-> Do not commit healthcare-related data without explicit authorization. Keep raw files unchanged and exclude patient identifiers from outputs.
-
-No external dataset is required by the coursework.
+> Do not publish healthcare-related data without authorization. Remove identifiers from notebooks, screenshots, logs, and reports.
 
 ---
 
-## 📓 Machine Learning Workflow & Coursework Tasks
+## 📓 Machine Learning Workflow & Tasks
 
-| Coursework stage | Primary location | Expected deliverables |
+| Coursework task | Planned file/location | Expected work |
 |---|---|---|
-| **Task 01 — Problem Definition & Literature Review** | `docs/literature/` | Problem definition, five or more papers, research-gap analysis |
-| **Task 02 — Dataset Understanding** | `notebooks/01_data_understanding/` | Dataset overview, attributes, data dictionary, quality discussion |
-| **Task 03 — Preprocessing & Feature Engineering** | `notebooks/02_preprocessing/`, `04_feature_engineering/` | Cleaning, encoding, scaling, selection, engineered features |
-| **Task 04 — Exploratory Data Analysis** | `notebooks/03_eda/` | Required plots, statistics, patterns, interpretation |
-| **Task 05 — Model Development** | `notebooks/05_model_development/` | At least three models, hyperparameters, comparison |
-| **Task 06 — Model Evaluation** | `notebooks/06_model_evaluation/` | Metrics, confusion matrices, comparison table, model selection |
-| **Task 07 — Explainable AI** | `notebooks/07_explainability/` | XAI visualizations, reasoning, transparency, ethics |
-| **Task 08 — AI Prototype** | `app/` | Working Streamlit or Flask prototype and screenshots |
-| **Task 09 — Technical Report** | `docs/report/` | Professional report covering the complete lifecycle |
-
-Reusable notebook logic should be moved into `src/smartcare_risk/` and verified through `tests/`.
+| **Problem Definition & Literature Review** | Technical report | Define the problem and review at least five peer-reviewed papers |
+| **Dataset Understanding** | `02_exploratory_data_analysis.ipynb` | Attributes, quality, statistics, distributions, correlations |
+| **Preprocessing & Feature Engineering** | `01_preprocessing_feature_engineering.ipynb` | Missing values, duplicates, outliers, encoding, scaling, selection |
+| **Model Development** | `03_model_development.ipynb` | Train and tune at least three classifiers |
+| **Model Evaluation** | `04_model_evaluation.ipynb` | Metrics, confusion matrices, comparison, final selection |
+| **Explainable AI & Ethics** | `05_explainable_ai_and_ethics.ipynb` | SHAP/LIME/importance, transparency, fairness, limitations |
+| **Prototype Development** | `06_dashboard_deployment.ipynb`, `app/app.py` | Patient input, processing, prediction, result display |
 
 ---
 
 ## 🏆 Model Evaluation Plan
 
-All developed models will be evaluated with the coursework-required multiclass metrics:
+The coursework requires multiclass:
 
-| Metric | Purpose |
-|---|---|
-| **Accuracy** | Overall proportion of correct predictions |
-| **Precision** | Reliability of predictions for each risk class |
-| **Recall** | Ability to identify each risk class |
-| **F1 score** | Balance between precision and recall |
-| **Confusion matrix** | Class-by-class error analysis |
+- Accuracy
+- Precision
+- Recall
+- F1 score
+- Confusion matrix
 
-Macro and weighted averages should be reported where appropriate. The final model must be selected using evidence across multiple metrics—not accuracy alone.
+At least three models should be compared. Possible algorithms include Logistic Regression, Decision Tree, Random Forest, Support Vector Machine, Naive Bayes, K-Nearest Neighbors, and optional XGBoost.
 
-### Candidate algorithms
-
-- Multinomial Logistic Regression
-- Decision Tree
-- Random Forest
-- Support Vector Machine
-- Naive Bayes
-- K-Nearest Neighbors
-- XGBoost *(optional)*
-
-At least three suitable models will be chosen after the dataset and class distribution are understood.
+No best model or performance value is claimed until experiments are completed on an unseen test set.
 
 ---
 
 ## 🧠 Explainable AI & Ethics
 
-### 🔍 Planned interpretability
+The final solution must use **SHAP**, **LIME**, or **feature importance analysis** to discuss:
 
-The final analysis will use at least one coursework-approved method:
+- Important predictive features
+- Individual prediction reasoning
+- Model transparency
+- Ethical implications
+- Privacy and demographic bias
+- Limitations and clinical accountability
 
-- **SHAP** for global and local feature contributions
-- **LIME** for local prediction explanations
-- **Feature importance analysis** for supported models
-
-The report should explain important features and prediction reasoning without implying causation from predictive associations.
-
-### ⚖️ Responsible AI principles
-
-- **Human oversight** — predictions support qualified professionals.
-- **Privacy** — identifiers must not appear in notebooks, screenshots, logs, or history.
-- **Fairness** — compare relevant demographic subgroup performance where responsible.
-- **Transparency** — document training, evaluation, selection, and explanations.
-- **Uncertainty** — never present predictions as diagnostic certainty.
-- **Limitations** — document sampling, measurement, imbalance, and generalization risks.
+Healthcare predictions should remain human-supervised and should never be presented as diagnostic certainty.
 
 ---
 
-## 🖥️ AI Prototype Plan
+## 🖥️ Interactive Streamlit Prototype
 
-The Streamlit or Flask prototype should:
+The planned prototype in `app/app.py` should:
 
-1. Accept relevant patient information through validated inputs.
-2. Apply the same fitted preprocessing pipeline used during training.
-3. Predict `Low`, `Medium`, or `High` disease risk.
-4. Display the result with appropriate context and limitations.
-5. Avoid collecting or exposing unnecessary patient identifiers.
+1. Accept validated patient information.
+2. Apply the fitted preprocessing workflow.
+3. Generate a `Low`, `Medium`, or `High` prediction.
+4. Display the result clearly and responsibly.
 
-The framework will be selected during implementation. No prototype code exists yet.
+The application file is currently empty.
 
 ---
 
 ## 🚀 Getting Started
-
-The repository is currently a scaffold. These commands describe the planned setup once code and dependency files are added.
 
 ### 1️⃣ Clone the repository
 
@@ -283,100 +231,61 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3️⃣ Add the supplied data
+### 3️⃣ Add the coursework dataset
 
-Place the original dataset and data dictionary in `data/raw/`. Do not rename or modify them.
+Replace the empty CSV placeholders under `data/raw/` with the lecturer-provided files.
 
-### 4️⃣ Install dependencies
+### 4️⃣ Add and install dependencies
 
-Installation instructions will be added after a version-controlled dependency file is created. Avoid unpinned packages for final experiments.
+Populate `requirements.txt` only after selecting and pinning the required package versions.
 
 ---
 
-## 🔄 Planned Notebook Execution Order
+## 🔄 Notebook Pipeline Execution
+
+After the notebooks are implemented, run them in this order:
 
 ```text
-1. notebooks/01_data_understanding/     # Inspect attributes, target, and quality
-2. notebooks/02_preprocessing/          # Clean data and define preprocessing
-3. notebooks/03_eda/                    # Explore distributions and patterns
-4. notebooks/04_feature_engineering/    # Encode, scale, select, derive features
-5. notebooks/05_model_development/      # Train and tune classifiers
-6. notebooks/06_model_evaluation/       # Compare models on unseen data
-7. notebooks/07_explainability/          # Explain predictions and assess ethics
+1. notebooks/01_preprocessing_feature_engineering.ipynb
+2. notebooks/02_exploratory_data_analysis.ipynb
+3. notebooks/03_model_development.ipynb
+4. notebooks/04_model_evaluation.ipynb
+5. notebooks/05_explainable_ai_and_ethics.ipynb
+6. notebooks/06_dashboard_deployment.ipynb
 ```
-
-Use fixed random seeds, preserve an unseen test set, and fit learned transformations on training data only.
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Area | Planned tools |
-|---|---|
-| **Language** | Python 3.8+ |
-| **Environment** | Jupyter Notebook |
-| **Data manipulation** | Pandas, NumPy |
-| **Visualization** | Matplotlib, Seaborn |
-| **Machine learning** | Scikit-learn |
-| **Optional ML** | XGBoost, TensorFlow, Keras |
-| **Explainable AI** | SHAP, LIME, feature importance |
-| **Prototype** | Streamlit or Flask |
-| **Persistence** | Joblib or Pickle |
-| **Testing** | Pytest *(planned)* |
-
-Specific versions will be recorded after the project environment is established.
-
----
-
-## 🧰 Engineering Standards
-
-- Keep raw data immutable and separate from derived data.
-- Use notebooks for investigation and `src/` for reusable logic.
-- Number notebooks in execution order with descriptive snake_case names.
-- Use a stratified split where appropriate for the verified target distribution.
-- Fit imputers, encoders, scalers, and selectors on training data only.
-- Save preprocessing and classification as one fitted pipeline where practical.
-- Fix random seeds and record dependencies, parameters, and outputs.
-- Add unit tests for transformations and integration tests for prediction flow.
-- Use focused branches, small commits, reviews, and a final submission tag.
-- Never commit secrets, environments, raw patient data, or bulky artifacts.
-
----
-
-## ✅ Coursework Submission Checklist
-
-- [ ] Technical report (PDF)
-- [ ] Jupyter notebook file(s)
-- [ ] Python source code
-- [ ] Trained model file (`.pkl` or `.joblib`)
-- [ ] Working prototype source code
-- [ ] Explainability visualizations and interpretation
-- [ ] Prototype screenshots
-- [ ] GitHub repository link
-- [ ] Presentation slides
-- [ ] Five-to-ten-minute video demonstration
-- [ ] Every member is prepared for the individual viva
+- **Language:** Python
+- **Environment:** Jupyter Notebook
+- **Data:** Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
+- **Machine Learning:** Scikit-learn
+- **Optional Machine Learning:** XGBoost, TensorFlow, Keras
+- **Explainability:** SHAP or LIME
+- **Prototype:** Streamlit or Flask
+- **Model Persistence:** Pickle or Joblib
 
 ---
 
 ## 👥 Project Team
 
-Replace these placeholders with the final group details and agreed responsibilities.
-
 | Student ID | Contributor | GitHub Profile | Primary Responsibility |
 |:---:|---|:---:|---|
-| `Add ID` | `Add name` | `@username` | Problem definition and literature review |
-| `Add ID` | `Add name` | `@username` | Data understanding, preprocessing, and EDA |
-| `Add ID` | `Add name` | `@username` | Feature engineering and model development |
-| `Add ID` | `Add name` | `@username` | Evaluation, explainability, and prototype |
+| `Add ID` | `Add name` | `@username` | Add responsibility |
+| `Add ID` | `Add name` | `@username` | Add responsibility |
+| `Add ID` | `Add name` | `@username` | Add responsibility |
+| `Add ID` | `Add name` | `@username` | Add responsibility |
 
-The coursework permits a maximum of four students per group.
+The coursework allows a maximum of four students per group.
 
 ---
 
 ## 🎓 Academic Integrity
 
-All analysis, code, results, and writing must be the group's own work. AI tools may support learning, but every member must understand and justify the attributes, preprocessing choices, algorithms, metrics, explainability outputs, prototype behavior, and individual contribution during the viva.
+All analysis, code, results, and writing must be the group's own work. Every member must understand and be able to explain the data, preprocessing, algorithms, metrics, explainability outputs, prototype, and individual contribution during the viva.
 
 ---
 
