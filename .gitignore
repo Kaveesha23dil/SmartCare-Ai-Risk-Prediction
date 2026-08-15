@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Packaging and test caches
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Data: keep directory placeholders only
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Generated machine-learning artifacts
+artifacts/models/*
+artifacts/metrics/*
+artifacts/explainability/*
+!artifacts/models/.gitkeep
+!artifacts/metrics/.gitkeep
+!artifacts/explainability/.gitkeep
+
+# Generated report exports
+reports/figures/*
+reports/tables/*
+!reports/figures/.gitkeep
+!reports/tables/.gitkeep
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
