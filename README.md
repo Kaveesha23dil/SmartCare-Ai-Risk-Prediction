@@ -147,8 +147,7 @@ The dataset contains 1,000 hospital records covering patient, clinical, operatio
 
 The empty raw-data placeholders must be replaced with the lecturer-provided files. No external dataset is required.
 
-> [!CAUTION]
-> Do not publish healthcare-related data without authorization. Remove identifiers from notebooks, screenshots, logs, and reports.
+
 
 ---
 
@@ -279,7 +278,7 @@ After the notebooks are implemented, run them in this order:
 | `Add ID` | `Add name` | `@username` | Add responsibility |
 | `Add ID` | `Add name` | `@username` | Add responsibility |
 
-The coursework allows a maximum of four students per group.
+
 
 ---
 
