@@ -25,6 +25,7 @@
 - [Notebook Execution Order](#-notebook-pipeline-execution)
 - [Technology Stack](#-technology-stack)
 - [Project Team](#-project-team)
+- [Team Branch Workflow](#-team-branch-workflow)
 - [Academic Integrity](#-academic-integrity)
 
 ---
@@ -271,14 +272,47 @@ After the notebooks are implemented, run them in this order:
 
 ## 👥 Project Team
 
-| Student ID | Contributor | GitHub Profile | Primary Responsibility |
-|:---:|---|:---:|---|
-| `Add ID` | `Add name` | `@username` | Add responsibility |
-| `Add ID` | `Add name` | `@username` | Add responsibility |
-| `Add ID` | `Add name` | `@username` | Add responsibility |
-| `Add ID` | `Add name` | `@username` | Add responsibility |
+| Student ID | Contributor | GitHub Profile | Primary Responsibility | Assigned Branch |
+|:---:|---|:---:|---|:---:|
+| **CIT-23-02-0021** | Nilupul Thisaranga | [@N3Edirisinghe](https://github.com/N3Edirisinghe) | Model Evaluation & Selection | `member-01` |
+| **CIT-23-02-0025** | Siluna Nusal | [@GitGuru29](https://github.com/GitGuru29) | Explainable AI (XAI) & Prototype | `member-02` |
+| **CIT-23-02-0042** | Dulani Madubashini | [@cobweb-sudo](https://github.com/cobweb-sudo) | Exploratory Data Analysis (EDA) | `member-03` |
+| **CIT-23-02-0127** | Kaveesha Dilshan | [@Kaveesha23dil](https://github.com/Kaveesha23dil) | Data Preprocessing & Feature Engineering | `member-04` |
+| **CIT-23-02-0359** | Zumra Hassan | [@Zumrahassan222](https://github.com/Zumrahassan222) | Model Development & Tuning | `member-05` |
 
+---
 
+## 🌿 Team Branch Workflow
+
+Each member must work only on their assigned predefined branch:
+
+| Member | Branch |
+|:---:|---|
+| Member 01 | `member-01` |
+| Member 02 | `member-02` |
+| Member 03 | `member-03` |
+| Member 04 | `member-04` |
+| Member 05 | `member-05` |
+
+### First-time branch setup
+
+```bash
+git fetch origin
+git switch <assigned-branch>
+git push -u origin <assigned-branch>
+```
+
+### Normal contribution workflow
+
+```bash
+git switch <assigned-branch>
+git pull --rebase origin <assigned-branch>
+git add .
+git commit -m "Describe the completed work"
+git push origin <assigned-branch>
+```
+
+Members must not push coursework changes directly to `main`. Completed work should be reviewed through a pull request from the assigned member branch into `main`. Before opening a pull request, synchronize the member branch with the latest `main` and resolve conflicts locally.
 
 ---
 
