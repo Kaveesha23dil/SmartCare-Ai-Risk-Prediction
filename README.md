@@ -148,8 +148,7 @@ The dataset contains 1,000 hospital records covering patient, clinical, operatio
 
 The empty raw-data placeholders must be replaced with the lecturer-provided files. No external dataset is required.
 
-> [!CAUTION]
-> Do not publish healthcare-related data without authorization. Remove identifiers from notebooks, screenshots, logs, and reports.
+
 
 ---
 
@@ -280,9 +279,6 @@ After the notebooks are implemented, run them in this order:
 | **CIT-23-02-0042** | Dulani Madubashini | [@cobweb-sudo](https://github.com/cobweb-sudo) | Exploratory Data Analysis (EDA) | `member-03` |
 | **CIT-23-02-0127** | Kaveesha Dilshan | [@Kaveesha23dil](https://github.com/Kaveesha23dil) | Data Preprocessing & Feature Engineering | `member-04` |
 | **CIT-23-02-0359** | Zumra Hassan | [@Zumrahassan222](https://github.com/Zumrahassan222) | Model Development & Tuning | `member-05` |
-
-> [!WARNING]
-> The supplied team list contains five students, but the coursework specification states a maximum of four students per group. Confirm the approved group size with the lecturer before submission.
 
 ---
 
