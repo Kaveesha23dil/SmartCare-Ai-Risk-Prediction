@@ -1,1 +1,14 @@
-
+{
+  "best_model": "Logistic Regression",
+  "best_model_file": "logistic_regression.pkl",
+  "macro_f1": 0.9323,
+  "accuracy": 0.93,
+  "macro_roc_auc": 0.9759,
+  "low_class_recall": 0.8846,
+  "selection_criteria": [
+    "macro_f1 (primary ranking metric)",
+    "low_class_recall (minority-class check)",
+    "macro_roc_auc (threshold-independent separability)",
+    "cv_to_test_consistency (generalization check, from Task 05)"
+  ]
+}
